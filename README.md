@@ -7,7 +7,15 @@ project/
 │   └── model_config.yaml
 │
 ├── data/                       # Dữ liệu theo chuẩn ImageFolder
-│   ├── train/
+├── raw/                        # Ảnh gốc
+│   │   ├── class1/
+│   │   ├── class2/
+│   │   └── ...
+├── processed/                  #Ảnh đã tiền xử lý xong
+│   │   ├── class1/
+│   │   ├── class2/
+│   │  
+├── train/
 │   │   ├── class1/
 │   │   ├── class2/
 │   │   └── ...
@@ -17,6 +25,7 @@ project/
 ├── src/
 │   ├── datasets/
 │   │   └── dataset.py          # DataLoader, transform, augmentation
+│   ├── script.py               # Script xử lý ảnh
 │   ├── model.py                # Model lựa chọn để xử lý EfficientNet-V2
 │   ├── train.py                # Vòng lặp training chính
 │   ├── eval.py                 # Đánh giá model (accuracy, F1)
@@ -29,11 +38,6 @@ project/
 │   │   └── best_model.pth
 │   └── logs/
 │       └── training_log.txt
-│
-├── scripts/                    # Chứa các script xử lý ảnh
-│   ├── resize_images.py        # Script tiền xử lý resize 384x384
-│   ├── remove_duplicates.py    # Script lọc ảnh trùng
-│   └── clean_blurry_images.py  # Script loại ảnh mờ
 │
 ├── requirements.txt            # Danh sách thư viện
 ├── README.md                   # Hướng dẫn chạy dự án
