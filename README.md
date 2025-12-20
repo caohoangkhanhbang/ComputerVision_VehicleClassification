@@ -25,7 +25,7 @@ project/
 ├── src/
 │   ├── datasets/
 │   │   └── dataset.py          # DataLoader, transform, augmentation
-│   ├── script.py               # Script xử lý ảnh
+│   ├── script.py               # Script tiền xử lý ảnh
 │   ├── model.py                # Model lựa chọn để xử lý EfficientNet-V2
 │   ├── train.py                # Vòng lặp training chính
 │   ├── eval.py                 # Đánh giá model (accuracy, F1)
