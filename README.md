@@ -1,6 +1,7 @@
-# Cấu trúc project
+## Cấu trúc dự án (Project Structure)
+
+```text
 project/
-│
 ├── configs/                    # Cấu hình (model, training, augmentation...)
 │   ├── config.yaml
 │   └── model_config.yaml
@@ -16,15 +17,12 @@ project/
 ├── src/
 │   ├── datasets/
 │   │   └── dataset.py          # DataLoader, transform, augmentation
-│   │
 │   ├── model.py                # Model lựa chọn để xử lý EfficientNet-V2
-│   │
 │   ├── train.py                # Vòng lặp training chính
 │   ├── eval.py                 # Đánh giá model (accuracy, F1)
 │   ├── inference.py            # Dự đoán ảnh đơn lẻ
 │   ├── utils.py                # Tiện ích: seed, logger, metrics
 │   └── transforms.py           # Tập trung các augment (ColorJitter, Blur, Resize)
-│
 │
 ├── outputs/                    # Lưu kết quả training
 │   ├── checkpoints/
@@ -32,7 +30,7 @@ project/
 │   └── logs/
 │       └── training_log.txt
 │
-├── scripts/                    # Chứa các script xử lý ảnh (ví dụ):
+├── scripts/                    # Chứa các script xử lý ảnh
 │   ├── resize_images.py        # Script tiền xử lý resize 384x384
 │   ├── remove_duplicates.py    # Script lọc ảnh trùng
 │   └── clean_blurry_images.py  # Script loại ảnh mờ
