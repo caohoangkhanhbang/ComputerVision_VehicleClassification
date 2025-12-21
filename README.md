@@ -43,6 +43,8 @@ project/
 ├── README.md                   # Hướng dẫn chạy dự án
 └── .gitignore
 
+Lệnh chạy resize ảnh:
+python -c "from src.scripts import resize_images_opencv; resize_images_opencv('data/raw','data/processed',(224,224))"
 
 
 
